@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+}
+
+.container {
+    border: 3px solid skyblue;
+    padding: 15px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-container>div {
+    width: 90px;
+    height: 30px;
+    border: 1px solid black; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr; 
+    gap: 10px;
+}
+
+.grid-container>div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black; 
+}
+
+div.margin-top {
+    margin-top: 70px;
+}
+
+.flex-container-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 300px;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap:wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+.flex-container-2>div {
+    width: 100px;
+    border: 1px solid black;
+}
+
+
+.flex-container-2 .center{
+    align-self: center;
+}
+
+.flex-container-2 .baseline{
+    align-self: baseline;
+}
+
+.flex-container-2 .first-baseline{
+    align-self: first baseline;
+}
+
+.flex-container-2 .flex-end{
+    align-self: flex-end;
+}
+
+.flex-container-2 .flex-start{
+    align-self: flex-start;
+}
+
+.flex-container-2 .last-baseline{
+    align-self: last baseline;
+}
+
+.flex-container-2 .last-baseline{
+    align-self: last baseline;
+}
+
+.flex-container-2 .normal{
+    align-self: normal;
+}
+
+.flex-container-2 .safe{
+    align-self: safe;
+}
+
+.flex-container-2 .self-end{
+    align-self: self-end;
+}
+
+.flex-container-2 .self-start{
+    align-self: self-start;
+}
+
+.flex-container-2 .stretch{
+    align-self: stretch;
+}
+
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-container-2>div {
+    width: auto;
+    border: 1px solid black;
+}
+
+.grid-container-2 .grid-area {
+    grid-area: 1 / 2 / 5;
+    /* grid-area: 1 / 2 / span 4; */
+}
+
+.grid-container-2.temp-rows {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.grid-container-2 .row4-6 {
+    grid-area: 4 / 1 / span 3 / span 3;
+}
+
+.grid-container-2.justify-items {
+    justify-items: stretch; /*  for grid items */
+    /* justify-content: start; */ /* for flex box */
+    justify-items: center;
+    justify-items: flex-start;
+    justify-items: end;
+}
+
+
+.grid-container-2.align-items {
+    align-items: stretch; /*  for grid items */
+    /* align-content: start; */ /* for flex box */
+    height: 100px;
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+}
